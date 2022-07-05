@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100&display=swap');
+
+* {
+    font-weight: bold;
+}
+
+section {
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    padding: 0%;
+    width: 100%;
+}
+ body {
+    width: 88%;
+    margin: 0px;
+ }
+article {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10%;
+    background-color: rgb(241, 237, 237);
+}
+.titre {
+   margin: 0;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo {
+    width:150px;
+    margin: 20px;
+}
+
+.box_titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(222, 217, 217);
+    box-shadow: 0 -5px 5px 0 rgba(0,0,0,0.2);
+    height: 50px;
+    margin-top: 20px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 0%;
+    font-size: 16px;
+    color: grey;
+}
+
+h3 {
+    padding-top: 40px;
+}
+
+h4 {
+    color: grey;
+    font-size: 13px;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    padding-top: 0px;
+ }
+
+
+ .card_comment, footer > p {
+    margin-top: 0px;
+ }
+
+.fa-solid {
+    padding: 20px;
+    margin-left: 10px;
+}
+
+footer > a { 
+    color: white;
+}
+
+footer > a > p { 
+    color: white;
+}
+
+.bouton {
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    height: 40px;
+    background: linear-gradient(7deg,#fac1c1, #b0b6f4);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+form {
+    padding:100px;
+    padding-top: 10px;
+    background-color: rgb(241, 237, 237);
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 30px;
+  height: 40px;
+  border: solid 1px white;
+  width: 90%;
+  text-align: center;
+  box-shadow: 3px 3px 7px #aaa; 
+  vertical-align: middle;
+  flex: 1 40px;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+.selection {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.index {
+    background-color: #b0b6f4;
+    border-radius: 100%;
+    width: 20px;
+    margin: -20px;
+    padding: 3px;
+}
+
+#restaurents {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(241, 237, 237);
+ }
+ #carte {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px;
+    background-color: rgb(241, 237, 237);
+    
+ }
+
+ .card_photo {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px;
+    overflow: hidden;
+    margin-right:8px;
+    margin-top: 20px;
+    flex: 1 380px;
+  }
+
+  .card_photo_resto {
+   
+    background-color: rgb(241, 237, 237);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 0px;
+    overflow: hidden;
+    margin-right:8px;
+    margin-top: -100px;
+    flex: 1 380px;
+    z-index: 1000;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 100px;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  
+  .img_r {
+    width:100%;
+    z-index: 1;
+  }
+
+  .card_comment {
+    display: flex;
+    flex-direction: column;
+    flex: 1 200px;
+    margin: 0;
+  }
+
+  .card_soustitre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .fa-regular {
+    margin: 10px;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items:flex-start;
+    background-color: rgb(48, 47, 47);
+    height: 300px;
+    padding: 30px;
+  }
+
+  .footer {
+    margin: 30px;
+  }
+
+  .titre_resto {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lobster', cursive;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-style: italic;
+  }
+
+  .entrees {
+    display: flex;
+    margin: 20px;
+  }
+
+  .card_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin-right: 8px;
+    margin-top: 20px;
+    flex: 1 280px;
+  }
