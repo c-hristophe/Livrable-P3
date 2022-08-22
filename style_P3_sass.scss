@@ -532,13 +532,26 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 
 @keyframes select_btn_in {
     0% {
-        transform: translateX(100px);
-        transition-duration: 1000ms;
+        transform: translateX(200px);
+        
     }
     100% {
-        transform: translateX(0);
-        transition-duration: 1000ms;
+        transform: translateX(50px);
         display: block;
+        
+    }
+}
+
+@keyframes select_btn_out {
+   
+    0% {
+        transform: translateX(50px);
+       
+        
+    } 
+    100% {
+        transform: translateX(500px);
+        
     }
 }
 
@@ -672,15 +685,16 @@ h5 {
                 margin-top: 20px;
                 margin-bottom: 20px;
                 flex: 1 100px;
+                flex-wrap: nowrap;
                 height: 100px;
                 cursor: pointer;
                 animation: select_plat 1000ms 500ms;
-                transition: all 2s;
-                                
+                                                
                     &:hover .btn-icone {
-                    animation: select_btn_in 1000ms 0ms ease-in-out;
+                    animation: select_btn_in 2000ms 0ms both;
                     display: block;
-                    margin: 0px;
+                    
+                    
                     }
 
                     &:hover .fa-solid {
@@ -688,14 +702,8 @@ h5 {
                         font-size: 30px;
                         margin: 5px;
                     }
+                }
 
-                    &:hover {
-                        & + .btn-icone {
-                                    transform: scaleX(1);
-                                }
-                    }
-
-                   
                 .card__comment--menu {
                     display: flex;
                     flex-direction: column;
@@ -708,33 +716,30 @@ h5 {
                     white-space: nowrap;
                  
                 }  
-
+                    .trans {
+                        
+                        flex: 1;
+                    }
                     .btn-icone {
-                        position: relative;
-                        margin-right: 0px;
+                        flex: 0;
+                        margin-right: 50px;
                         margin-bottom: 0px;
                         margin-top: 0px;
                         padding-top: 14px;
                         padding-right: 15px;
-                        width: 70px;
+                        width: 60px;
                         height: 100px;
                         background-color: aquamarine;
                         font-size: 30px;
                         color: white;
-                        display: none;
-                        transition: all 2s;
+                        animation: select_btn_out 2000ms 0ms both;
                         
-                       
                     }
                         .selecteur {
-                            transform: rotate(0);
-                            animation: rotate 1000ms 0ms both;
-                            transform-origin: 60%;
-                            transition: all 2s;
-                            
-                     
+                           animation: rotate 1000ms 1000ms both;
+                           transform-origin: 60%;
                         }
-                }
+                
     .form_menu {
         background-color: $grey;
         height: 200px;
@@ -1096,6 +1101,7 @@ h5 {
     transform: scaleY(0);
     animation: select_plat 2000ms 500ms both;
     align-items: center;
+    overflow: hidden;
     margin-top: 13%;
     margin-left: -10%;
     width: 15%;

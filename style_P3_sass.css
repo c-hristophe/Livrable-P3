@@ -545,24 +545,36 @@ footer .titre__footer {
 }
 @-webkit-keyframes select_btn_in {
   0% {
-    transform: translateX(100px);
-    transition-duration: 1000ms;
+    transform: translateX(200px);
   }
   100% {
-    transform: translateX(0);
-    transition-duration: 1000ms;
+    transform: translateX(50px);
     display: block;
   }
 }
 @keyframes select_btn_in {
   0% {
-    transform: translateX(100px);
-    transition-duration: 1000ms;
+    transform: translateX(200px);
   }
   100% {
-    transform: translateX(0);
-    transition-duration: 1000ms;
+    transform: translateX(50px);
     display: block;
+  }
+}
+@-webkit-keyframes select_btn_out {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}
+@keyframes select_btn_out {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(500px);
   }
 }
 @-webkit-keyframes rotate {
@@ -719,27 +731,24 @@ h5 {
   margin-top: 20px;
   margin-bottom: 20px;
   flex: 1 100px;
+  flex-wrap: nowrap;
   height: 100px;
   cursor: pointer;
   -webkit-animation: select_plat 1000ms 500ms;
           animation: select_plat 1000ms 500ms;
-  transition: all 2s;
 }
 .card__menu:hover .btn-icone {
-  -webkit-animation: select_btn_in 1000ms 0ms ease-in-out;
-          animation: select_btn_in 1000ms 0ms ease-in-out;
+  -webkit-animation: select_btn_in 2000ms 0ms both;
+          animation: select_btn_in 2000ms 0ms both;
   display: block;
-  margin: 0px;
 }
 .card__menu:hover .fa-solid {
   color: white;
   font-size: 30px;
   margin: 5px;
 }
-.card__menu:hover + .btn-icone {
-  transform: scaleX(1);
-}
-.card__menu .card__comment--menu {
+
+.card__comment--menu {
   display: flex;
   flex-direction: column;
   margin-top: 0;
@@ -750,27 +759,31 @@ h5 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.card__menu .btn-icone {
-  position: relative;
-  margin-right: 0px;
+
+.trans {
+  flex: 1;
+}
+
+.btn-icone {
+  flex: 0;
+  margin-right: 50px;
   margin-bottom: 0px;
   margin-top: 0px;
   padding-top: 14px;
   padding-right: 15px;
-  width: 70px;
+  width: 60px;
   height: 100px;
   background-color: aquamarine;
   font-size: 30px;
   color: white;
-  display: none;
-  transition: all 2s;
+  -webkit-animation: select_btn_out 2000ms 0ms both;
+          animation: select_btn_out 2000ms 0ms both;
 }
-.card__menu .selecteur {
-  transform: rotate(0);
-  -webkit-animation: rotate 1000ms 0ms both;
-          animation: rotate 1000ms 0ms both;
+
+.selecteur {
+  -webkit-animation: rotate 1000ms 1000ms both;
+          animation: rotate 1000ms 1000ms both;
   transform-origin: 60%;
-  transition: all 2s;
 }
 
 .form_menu {
@@ -1120,6 +1133,7 @@ h5 {
     -webkit-animation: select_plat 2000ms 500ms both;
             animation: select_plat 2000ms 500ms both;
     align-items: center;
+    overflow: hidden;
     margin-top: 13%;
     margin-left: -10%;
     width: 15%;
