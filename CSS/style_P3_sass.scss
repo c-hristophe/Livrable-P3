@@ -307,15 +307,24 @@ form {
         margin-top: 20px;
         padding: 10px;
         transition: all 1s ease;
+        vertical-align: middle;
         &:hover {
             background: #efe6ed;
             .fa-solid {
                 color: #9356DC;
             }
         }
+        
+        .fa-solid {
+        padding: 20px;
+        margin-left: 20px;
+        color: grey;
+        font-size: 25px;
+        }
     }
 
     .index {
+        
         background-color: #9356DC;
         border-radius: 100%;
         width: 20px;
@@ -325,12 +334,7 @@ form {
         font-size: 20px;
     }
     
-    .fa-solid {
-        padding: 20px;
-        margin-left: 20px;
-        color: grey;
-        font-size: 25px;
-}
+    
 /**
 *définition de la partie "Restaurants"
 */
@@ -391,7 +395,7 @@ form {
                                     /**
                     *définition du coeur
                     */
-                        $black: black;
+                        
 
                         .heart-container {
                         position: relative;
@@ -439,7 +443,7 @@ form {
                         position: absolute;
                         top: 0;
                         left: 0;
-                        fill: $black;
+                        fill: black;
                         }
 
 /**
@@ -532,12 +536,15 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 
 @keyframes select_btn_in {
     0% {
-        transform: translateX(200px);
+        transform: translateX(100px);
         
-    }
+       
+        
+    } 
     100% {
-        transform: translateX(50px);
-        display: block;
+        transform: translateX(0px);
+        
+        
         
     }
 }
@@ -547,10 +554,13 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     0% {
         transform: translateX(50px);
        
+       
         
     } 
     100% {
         transform: translateX(500px);
+       
+        
         
     }
 }
@@ -674,71 +684,118 @@ h5 {
             animation-fill-mode: both;
             
         }
-            .card__menu {
-                @include boxligne;
-                @include shadow;
-                background-color: white;
-                border-radius: 15px;
-                padding: 0%;
-                overflow: hidden;
-                margin-right: 8px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                flex: 1 100px;
-                flex-wrap: nowrap;
-                height: 100px;
-                cursor: pointer;
-                animation: select_plat 1000ms 500ms;
-                                                
-                    &:hover .btn-icone {
-                    animation: select_btn_in 2000ms 0ms both;
-                    display: block;
+        .card__menu {
+            @include boxligne;
+            @include shadow;
+            flex-wrap: nowrap;
+            background-color: white;
+            border-radius: 15px;
+            padding: 0%;
+            overflow: hidden;
+            margin-right: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex: 1 100px;
+            height: 100px;
+            cursor: pointer;
+            animation: select_plat 1000ms 500ms;
+            
+               
+                .trans {
+                    transition-duration: 1500ms;
+                    transform: translate(65px);
+                    z-index: 2;
+                    font-size: 20px;
+                    margin-top: 30px;
                     
-                    
-                    }
+                }       
 
-                    &:hover .fa-solid {
-                        color: white;
-                        font-size: 30px;
-                        margin: 5px;
-                    }
+                &:hover .card__comment--menu {
+                    overflow: hidden;
+                }       
+                
+                &:hover .btn-icone {
+                    transform: translateX(0);
+                    z-index: 1;
+                    margin: 0px;
                 }
 
-                .card__comment--menu {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 0;
-                    margin-right: 30px;
-                    flex: 1 100px;
-                    align-content: flex-start;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                 
-                }  
-                    .trans {
+                
+
+                &:hover .fa-solid {
+                    color: white;
+                    font-size: 30px;
+                    margin: 5px;
+                    transform: rotate(360deg);
+                    z-index: 1;
+                    
+                }
+                &:hover .trans {
+                    transform: translate(-5px);
+                    z-index: 2;
+                }
+
+                .fa-solid {
+                color: white;
+                font-size: 30px;
+                margin-top: 30px;
+                margin-left: 30px;
+                position: inherit;
+                transition-duration: 1500ms;
+                z-index: 1;
+            }
+
+        }
+
+            
+
+            
+              
+            .card__comment--menu {
+                width: 300px;
+                position: relative;
+                flex-direction: column;
+                margin-top: 0;
+                margin-right: 0px;
+                flex: 2 100px;
+                align-content: flex-start;
+                overflow:unset;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                z-index: 1;
+             
+            }  
+
+                .btn-icone {
+                    
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    padding-top: 14px;
+                    padding-right: 15px;
+                    width: 70px;
+                    height: 100px;
+                    background-color: aquamarine;
+                    font-size: 30px;
+                    color: white;
+                    transform: translateX(100px);
+                    transition:  1000ms ease-in-out;
+                    position: relative;
+                    z-index: 1;
+                    
+
+                    .selecteur {
                         
-                        flex: 1;
-                    }
-                    .btn-icone {
-                        flex: 0;
-                        margin-right: 50px;
-                        margin-bottom: 0px;
-                        margin-top: 0px;
-                        padding-top: 14px;
-                        padding-right: 15px;
-                        width: 60px;
-                        height: 100px;
-                        background-color: aquamarine;
-                        font-size: 30px;
+                        transform: rotateX(0deg);
+                        transition:  900ms;
                         color: white;
-                        animation: select_btn_out 2000ms 0ms both;
-                        
+                        margin-top: 20px;
+                        margin-left: 20px;
                     }
-                        .selecteur {
-                           animation: rotate 1000ms 1000ms both;
-                           transform-origin: 60%;
-                        }
+                   
+                }
+                    
+            
                 
     .form_menu {
         background-color: $grey;

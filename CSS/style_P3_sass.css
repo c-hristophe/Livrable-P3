@@ -307,12 +307,19 @@ form {
   margin-top: 20px;
   padding: 10px;
   transition: all 1s ease;
+  vertical-align: middle;
 }
 .box:hover {
   background: #efe6ed;
 }
 .box:hover .fa-solid {
   color: #9356DC;
+}
+.box .fa-solid {
+  padding: 20px;
+  margin-left: 20px;
+  color: grey;
+  font-size: 25px;
 }
 
 .index {
@@ -323,13 +330,6 @@ form {
   padding: 5px;
   color: white;
   font-size: 20px;
-}
-
-.fa-solid {
-  padding: 20px;
-  margin-left: 20px;
-  color: grey;
-  font-size: 25px;
 }
 
 /**
@@ -545,20 +545,18 @@ footer .titre__footer {
 }
 @-webkit-keyframes select_btn_in {
   0% {
-    transform: translateX(200px);
+    transform: translateX(100px);
   }
   100% {
-    transform: translateX(50px);
-    display: block;
+    transform: translateX(0px);
   }
 }
 @keyframes select_btn_in {
   0% {
-    transform: translateX(200px);
+    transform: translateX(100px);
   }
   100% {
-    transform: translateX(50px);
-    display: block;
+    transform: translateX(0px);
   }
 }
 @-webkit-keyframes select_btn_out {
@@ -723,6 +721,7 @@ h5 {
   flex-direction: row;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex-wrap: nowrap;
   background-color: white;
   border-radius: 15px;
   padding: 0%;
@@ -731,59 +730,83 @@ h5 {
   margin-top: 20px;
   margin-bottom: 20px;
   flex: 1 100px;
-  flex-wrap: nowrap;
   height: 100px;
   cursor: pointer;
   -webkit-animation: select_plat 1000ms 500ms;
           animation: select_plat 1000ms 500ms;
 }
+.card__menu .trans {
+  transition-duration: 1500ms;
+  transform: translate(65px);
+  z-index: 2;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.card__menu:hover .card__comment--menu {
+  overflow: hidden;
+}
 .card__menu:hover .btn-icone {
-  -webkit-animation: select_btn_in 2000ms 0ms both;
-          animation: select_btn_in 2000ms 0ms both;
-  display: block;
+  transform: translateX(0);
+  z-index: 1;
+  margin: 0px;
 }
 .card__menu:hover .fa-solid {
   color: white;
   font-size: 30px;
   margin: 5px;
+  transform: rotate(360deg);
+  z-index: 1;
+}
+.card__menu:hover .trans {
+  transform: translate(-5px);
+  z-index: 2;
+}
+.card__menu .fa-solid {
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  position: inherit;
+  transition-duration: 1500ms;
+  z-index: 1;
 }
 
 .card__comment--menu {
-  display: flex;
+  width: 300px;
+  position: relative;
   flex-direction: column;
   margin-top: 0;
-  margin-right: 30px;
-  flex: 1 100px;
+  margin-right: 0px;
+  flex: 2 100px;
   align-content: flex-start;
-  overflow: hidden;
+  overflow: unset;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.trans {
-  flex: 1;
+  z-index: 1;
 }
 
 .btn-icone {
-  flex: 0;
-  margin-right: 50px;
+  margin-right: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
   padding-top: 14px;
   padding-right: 15px;
-  width: 60px;
+  width: 70px;
   height: 100px;
   background-color: aquamarine;
   font-size: 30px;
   color: white;
-  -webkit-animation: select_btn_out 2000ms 0ms both;
-          animation: select_btn_out 2000ms 0ms both;
+  transform: translateX(100px);
+  transition: 1000ms ease-in-out;
+  position: relative;
+  z-index: 1;
 }
-
-.selecteur {
-  -webkit-animation: rotate 1000ms 1000ms both;
-          animation: rotate 1000ms 1000ms both;
-  transform-origin: 60%;
+.btn-icone .selecteur {
+  transform: rotateX(0deg);
+  transition: 900ms;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .form_menu {
