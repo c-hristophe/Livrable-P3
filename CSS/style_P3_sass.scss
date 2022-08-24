@@ -720,14 +720,12 @@ h5 {
                     margin: 0px;
                 }
 
-                
-
                 &:hover .fa-solid {
                     color: white;
                     font-size: 30px;
-                    margin: 5px;
                     transform: rotate(360deg);
                     z-index: 1;
+                    
                     
                 }
                 &:hover .trans {
@@ -743,14 +741,11 @@ h5 {
                 position: inherit;
                 transition-duration: 1500ms;
                 z-index: 1;
+                
             }
 
         }
 
-            
-
-            
-              
             .card__comment--menu {
                 width: 300px;
                 position: relative;
@@ -785,12 +780,9 @@ h5 {
                     
 
                     .selecteur {
-                        
-                        transform: rotateX(0deg);
-                        transition:  900ms;
                         color: white;
-                        margin-top: 20px;
-                        margin-left: 20px;
+                        
+                        
                     }
                    
                 }

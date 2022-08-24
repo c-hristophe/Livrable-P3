@@ -753,7 +753,6 @@ h5 {
 .card__menu:hover .fa-solid {
   color: white;
   font-size: 30px;
-  margin: 5px;
   transform: rotate(360deg);
   z-index: 1;
 }
@@ -802,11 +801,7 @@ h5 {
   z-index: 1;
 }
 .btn-icone .selecteur {
-  transform: rotateX(0deg);
-  transition: 900ms;
   color: white;
-  margin-top: 20px;
-  margin-left: 20px;
 }
 
 .form_menu {
