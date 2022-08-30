@@ -589,10 +589,10 @@ footer .titre__footer {
   }
 }
 p {
-  font-size: 20px;
+  font-size: 18px;
   white-space: nowrap;
   margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 0px;
   margin-top: 3px;
   margin-bottom: 3px;
   overflow: hidden;
@@ -600,7 +600,7 @@ p {
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -740,10 +740,11 @@ h5 {
   display: inline-block;
   text-align: right;
   transition-duration: 700ms;
-  margin-right: 0%;
+  margin-right: 0px;
   z-index: 1;
   font-size: 20px;
   margin-top: 30px;
+  width: 50px;
   transform: translateX(50px);
 }
 .card__menu:hover .card__comment--menu {
@@ -778,7 +779,6 @@ h5 {
 
 .card__comment--menu {
   display: inline-block;
-  overflow: hidden;
   width: 360px;
   margin-top: 0;
   margin-right: 0px;
@@ -800,6 +800,7 @@ h5 {
   transition: 800ms ease-in-out;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .btn-icone .selecteur {
   color: white;
