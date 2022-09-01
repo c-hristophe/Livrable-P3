@@ -188,7 +188,7 @@ a {
   }
 }
 /**
-*Apparition progressive delapage
+*Apparition progressive de la page
 */
 header, article, footer {
   -webkit-animation: page 3000ms 1000ms both;
@@ -501,45 +501,21 @@ footer .titre__footer {
 *-------------------Pages menus ----------------------
 */
 @-webkit-keyframes select_plat {
-  0% {
-    transform: scaleY(-4px);
+  from {
+    transform: scaleY(0);
     opacity: 0;
   }
-  25% {
-    transform: scaleY(-3px);
-    opacity: 0.2;
-  }
-  50% {
-    transform: scaleY(-2px);
-    opacity: 0.4;
-  }
-  75% {
-    transform: scaleY(-1px);
-    opacity: 0.8;
-  }
-  100% {
+  to {
     transform: scaleY(1);
     opacity: 1;
   }
 }
 @keyframes select_plat {
-  0% {
-    transform: scaleY(-4px);
+  from {
+    transform: scaleY(0);
     opacity: 0;
   }
-  25% {
-    transform: scaleY(-3px);
-    opacity: 0.2;
-  }
-  50% {
-    transform: scaleY(-2px);
-    opacity: 0.4;
-  }
-  75% {
-    transform: scaleY(-1px);
-    opacity: 0.8;
-  }
-  100% {
+  to {
     transform: scaleY(1);
     opacity: 1;
   }

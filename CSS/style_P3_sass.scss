@@ -196,7 +196,7 @@ a {
 }
 
 /**
-*Apparition progressive delapage
+*Apparition progressive de la page
 */
 header,article, footer {
     animation: page 3000ms 1000ms both;
@@ -513,25 +513,13 @@ $entrees-ret: 150ms;
 $entrees-delay: $entrees-dur + $entrees-ret;
 
 @keyframes select_plat {
-    0% {
-        transform: scaleY(-4px);
-         opacity:0;
+    from {
+        transform: scaleY(0);
+        opacity:0;
     }
-    25% {
-        transform: scaleY(-3px);
-        opacity:0.2;
-    }
-    50% {
-        transform: scaleY(-2px);
-        opacity:0.4;
-    }
-    75% {
-        transform: scaleY(-1px);
-        opacity:0.8;
-    }
-    100% {
+    to {
         transform: scaleY(1);
-       opacity:1;
+        opacity:1;
     }
 }
 
@@ -564,7 +552,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 
 
 p {
-    font-size: 18px;
+    font-size: 18px; 
     white-space: nowrap;
     margin-left: 10px;
     margin-right: 0px;
