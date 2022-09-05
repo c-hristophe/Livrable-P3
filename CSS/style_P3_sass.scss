@@ -523,21 +523,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     }
 }
 
-@keyframes cache {
-    0% {
-        
-        white-space: nowrap;
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    } 
-    50% {
-        width: 200px;
-        white-space: nowrap;
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    } 
+
 
     100% {
         display: block;
@@ -694,17 +680,9 @@ h5 {
                     margin-top: 30px;
                     width: 50px;
                     transform: translateX(50px);
-                    
-                  
-                    
-                    
                 }       
 
-                &:hover .card__comment--menu {
-                   
-                    animation: cache 600ms 0ms both;
-                    
-                }       
+                
                 
                 &:hover .btn-icone {
                     transform: translateX(0px);
@@ -765,8 +743,6 @@ h5 {
                     
                     .selecteur {
                         color: white;
-                        
-                        
                     }
                    
                 }
@@ -1290,16 +1266,9 @@ h5 {
             z-index: 1;
             font-size: 20px;
             margin-top: 30px;
-          
-            
-            
         }       
 
-        &:hover .card__comment--menu {
-           
-            animation: cache 600ms 0ms both;
-            
-        }       
+        
         
         &:hover .btn-icone {
             transform: translateX(0px);
@@ -1328,8 +1297,6 @@ h5 {
         position: inherit;
         transition: all 300ms;
         z-index: 1;
-        
-        
     }
 
 }
@@ -1361,13 +1328,8 @@ h5 {
             position: relative;
             z-index: 1;
            
-           
-            
-
             .selecteur {
                 color: white;
-                
-                
             }
            
         }
