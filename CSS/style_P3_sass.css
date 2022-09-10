@@ -520,50 +520,6 @@ footer .titre__footer {
     opacity: 1;
   }
 }
-@-webkit-keyframes cache {
-  0% {
-    white-space: nowrap;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  50% {
-    width: 200px;
-    white-space: nowrap;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  100% {
-    display: block;
-    width: 160px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-@keyframes cache {
-  0% {
-    white-space: nowrap;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  50% {
-    width: 200px;
-    white-space: nowrap;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  100% {
-    display: block;
-    width: 160px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
 p {
   font-size: 18px;
   white-space: nowrap;
@@ -722,10 +678,6 @@ h5 {
   margin-top: 30px;
   width: 50px;
   transform: translateX(50px);
-}
-.card__menu:hover .card__comment--menu {
-  -webkit-animation: cache 600ms 0ms both;
-          animation: cache 600ms 0ms both;
 }
 .card__menu:hover .btn-icone {
   transform: translateX(0px);
@@ -1254,10 +1206,6 @@ h5 {
     z-index: 1;
     font-size: 20px;
     margin-top: 30px;
-  }
-  .card__menu:hover .card__comment--menu {
-    -webkit-animation: cache 600ms 0ms both;
-            animation: cache 600ms 0ms both;
   }
   .card__menu:hover .btn-icone {
     transform: translateX(0px);

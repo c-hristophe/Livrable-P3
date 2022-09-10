@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
@@ -522,20 +521,6 @@ $entrees-delay: $entrees-dur + $entrees-ret;
         opacity:1;
     }
 }
-
-
-
-    100% {
-        display: block;
-        width: 160px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-
-
 
 p {
     font-size: 18px; 
