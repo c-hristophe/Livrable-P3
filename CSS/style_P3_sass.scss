@@ -81,7 +81,7 @@ article {
 
 h1 {
     font-size: 30px;
-    
+    text-overflow: ellipsis;
     text-align: center;
     
     
@@ -97,7 +97,10 @@ h2 {
     font-size: 20px;
     color: grey;
     width: 65%;
-    margin-left: 8%
+    margin-left: 8%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
    
   
 }
@@ -105,6 +108,9 @@ h2 {
 h3 {
     font-size: 25px;
     padding-top: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
 }
 
 h4 {
@@ -113,6 +119,7 @@ h4 {
     margin: 10px;
     margin-top: 0;
     margin-bottom: 0;
+    text-overflow: ellipsis;
 }
 
 p {
@@ -363,6 +370,7 @@ header,article, footer, section {
         margin-bottom: 3px;
         text-overflow: ellipsis;
         overflow: hidden;
+        display: block;
         color: black;
         text-align: left;
         width: 100%;
@@ -415,14 +423,18 @@ header,article, footer, section {
                     flex-direction: column;
                     flex: 1 100px;
                     align-content: flex-start;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
                         h3 {
                             color: rgb(99, 97, 97);
-                            font-size: 18px;
+                            font-size: 17px;
                             font-weight: lighter;
                             margin: 10px;
                             margin-top: 0;
                             margin-bottom: 0;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
 
                         h2 {
@@ -433,6 +445,7 @@ header,article, footer, section {
                             margin-top: 3px;
                             margin-bottom: 3px;
                             text-overflow: ellipsis;
+                            overflow: hidden;
                         }
                 }        
                                     /**
@@ -566,37 +579,13 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     }
 }
 
-p {
-    font-size: 18px; 
-    white-space: nowrap;
-    margin-left: 10px;
-    margin-right: 0px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 
-h4 {
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    
-}
-
-h5 {
-    margin: 0px;
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: grey;
-}
 
 .retour {
     display: flex;
     flex: 0 25%;
     font-size: 30px;
+    margin-left: 10px;
     .fa-solid {
         color: black;
     }
@@ -632,10 +621,14 @@ h5 {
         font-family: "Shrikhand", cursive;
         @include align-center;
         justify-content: space-between;
-        font-size: 28px;
+        font-size: 24px;
         margin-left: 20px;
         margin-right: 20px;
         font-style: italic;   
+
+        h1 {
+            font-size: 25px;
+        }
     }
 
         .entrees {
@@ -704,10 +697,11 @@ h5 {
                     text-align: right;
                     transition-duration: 700ms;
                     margin-right: 0px;
+                    margin-left: -20px;
                     z-index: 1;
                     font-size: 20px;
                     margin-top: 30px;
-                    width: 50px;
+                   
                     transform: translateX(50px);
                 }       
 
@@ -732,6 +726,24 @@ h5 {
                     transform: translateX(-10px);
                 }
 
+                &:hover h2 {
+                    animation: reduit 1s both;
+                }
+
+                &:hover h3 {
+                    animation: reduit 1s both;;
+                }
+
+                @keyframes reduit{
+                    from {
+                        width:260px
+                    }
+
+                    to {
+                        width:200px
+                    }
+                }
+
                 .fa-solid {
                 color: white;
                 font-size: 30px;
@@ -745,11 +757,49 @@ h5 {
         }
 
             .card__comment--menu {
-                display: inline-block;
+                display: block;
                 width: 360px;
                 margin-top: 0;
                 margin-right: 0px;
                 z-index: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+
+                h2 {
+                    display: block;
+                    font-size: 18px;
+                    font-weight: bolder;
+                    margin-left: -10px;
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    color: black;
+                    text-align: left;
+                    width: 260px;
+                }
+
+                h3
+                {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    margin-top: 3px;
+                    margin-left: 10px;
+                    margin-bottom: 3px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    color: black;
+                    text-align: left;
+                    font-weight: lighter;
+                    z-index: 1;
+                    width: 260px;
+                    
+                    
+                }
                 
             }  
 
@@ -765,13 +815,14 @@ h5 {
                     font-size: 30px;
                     color: white;
                     transform: translate(150px);
-                    transition:  800ms ease-in-out;
+                    transition: 800ms ease-in-out;
                     position: relative;
                     z-index: 1;
                     overflow: hidden;
                     
                     .selecteur {
                         color: white;
+                        margin-left: -6px;
                     }
                    
                 }

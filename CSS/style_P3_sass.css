@@ -42,6 +42,7 @@ article {
 
 h1 {
   font-size: 30px;
+  text-overflow: ellipsis;
   text-align: center;
 }
 
@@ -58,11 +59,17 @@ h2 {
   color: grey;
   width: 65%;
   margin-left: 8%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
 }
 
 h3 {
   font-size: 25px;
   padding-top: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
 }
 
 h4 {
@@ -71,6 +78,7 @@ h4 {
   margin: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  text-overflow: ellipsis;
 }
 
 p {
@@ -351,6 +359,7 @@ header, article, footer, section {
   margin-bottom: 3px;
   text-overflow: ellipsis;
   overflow: hidden;
+  display: block;
   color: black;
   text-align: left;
   width: 100%;
@@ -405,14 +414,18 @@ header, article, footer, section {
   flex-direction: column;
   flex: 1 100px;
   align-content: flex-start;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__comment h3 {
   color: rgb(99, 97, 97);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: lighter;
   margin: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__comment h2 {
   font-size: 19px;
@@ -422,6 +435,7 @@ header, article, footer, section {
   margin-top: 3px;
   margin-bottom: 3px;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /**
@@ -548,36 +562,11 @@ footer .titre__footer {
     opacity: 1;
   }
 }
-p {
-  font-size: 18px;
-  white-space: nowrap;
-  margin-left: 10px;
-  margin-right: 0px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-h4 {
-  font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-h5 {
-  margin: 0px;
-  font-size: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: grey;
-}
-
 .retour {
   display: flex;
   flex: 0 25%;
   font-size: 30px;
+  margin-left: 10px;
 }
 .retour .fa-solid {
   color: black;
@@ -623,10 +612,13 @@ h5 {
   text-align: center;
   vertical-align: middle;
   justify-content: space-between;
-  font-size: 28px;
+  font-size: 24px;
   margin-left: 20px;
   margin-right: 20px;
   font-style: italic;
+}
+.titre_resto h1 {
+  font-size: 25px;
 }
 
 .entrees {
@@ -701,10 +693,10 @@ h5 {
   text-align: right;
   transition-duration: 700ms;
   margin-right: 0px;
+  margin-left: -20px;
   z-index: 1;
   font-size: 20px;
   margin-top: 30px;
-  width: 50px;
   transform: translateX(50px);
 }
 .card__menu:hover .btn-icone {
@@ -723,6 +715,30 @@ h5 {
 .card__menu:hover .trans {
   transform: translateX(-10px);
 }
+.card__menu:hover h2 {
+  -webkit-animation: reduit 1s both;
+          animation: reduit 1s both;
+}
+.card__menu:hover h3 {
+  -webkit-animation: reduit 1s both;
+          animation: reduit 1s both;
+}
+@-webkit-keyframes reduit {
+  from {
+    width: 260px;
+  }
+  to {
+    width: 200px;
+  }
+}
+@keyframes reduit {
+  from {
+    width: 260px;
+  }
+  to {
+    width: 200px;
+  }
+}
 .card__menu .fa-solid {
   color: white;
   font-size: 30px;
@@ -734,11 +750,43 @@ h5 {
 }
 
 .card__comment--menu {
-  display: inline-block;
+  display: block;
   width: 360px;
   margin-top: 0;
   margin-right: 0px;
   z-index: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__comment--menu h2 {
+  display: block;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: -10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+  text-align: left;
+  width: 260px;
+}
+.card__comment--menu h3 {
+  display: block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+  text-align: left;
+  font-weight: lighter;
+  z-index: 1;
+  width: 260px;
 }
 
 .btn-icone {
@@ -760,6 +808,7 @@ h5 {
 }
 .btn-icone .selecteur {
   color: white;
+  margin-left: -6px;
 }
 
 .form_menu {
