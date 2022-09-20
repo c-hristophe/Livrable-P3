@@ -220,7 +220,7 @@ header, article, footer, section {
 }
 
 .logo {
-  width: 50%;
+  width: 200px;
   text-align: center;
 }
 
@@ -534,7 +534,6 @@ footer .footer p .fa-solid {
 footer .titre__footer {
   font-family: "Shrikhand", cursive;
   font-size: 25px;
-  text-align: left;
   margin-left: 0px;
   color: white;
 }
@@ -820,4 +819,74 @@ footer .titre__footer {
   align-items: center;
   margin-top: 30px;
   margin-bottom: -90px;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    max-width: 1600px;
+    margin: auto;
+  }
+  .selection {
+    text-align: center;
+    display: inline-block;
+  }
+  .box {
+    margin: auto;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .card__photo {
+    flex: 1 100px;
+  }
+  footer {
+    margin: auto;
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  .footer {
+    margin: auto;
+    flex-direction: row;
+  }
+  .titre__footer {
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card__photo {
+    flex: 1 280px;
+    flex-wrap: nowrap;
+  }
+  .container {
+    flex-direction: row;
+  }
+  footer {
+    margin: auto;
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  .footer {
+    margin: auto;
+    flex-direction: row;
+  }
+  .titre__footer {
+    margin: auto;
+    text-align: center;
+  }
+  .selection {
+    text-align: center;
+    display: inline-block;
+  }
+  .box {
+    margin: auto;
+  }
+  .spinner {
+    margin-top: 20%;
+    margin-left: 45%;
+  }
 }/*# sourceMappingURL=style_P3_sass.css.map */
