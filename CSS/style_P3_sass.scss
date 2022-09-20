@@ -124,8 +124,8 @@ h4 {
 
 p {
     font-size: 19px;
-    font-weight: bold;
-    margin-left: 10px;
+    font-weight:lighter;
+    margin-left: 0px;
     margin-right: 20px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -540,6 +540,7 @@ footer {
             display: flex;
             flex-direction: column;
             font-size: 16px;
+            
             p {
                 font-size: 16px;
                 font-style: normal;
@@ -556,6 +557,8 @@ footer {
             text-align: left;
             margin-left: 0px;
             color: white;
+           
+
 }
 }
 
@@ -835,6 +838,8 @@ $entrees-delay: $entrees-dur + $entrees-ret;
         transform: scaleY(0);
         animation: select_plat 2000ms 500ms both;
         align-items: center;
+        margin-top: 30px;
+        margin-bottom: -90px;
         
     }
 
