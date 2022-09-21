@@ -644,7 +644,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     }
 
         .entrees {
-            margin-top: 50px;
+            margin-top: 20px;
             margin-left: 10px;
             margin-right: 10px;
             background: none;
@@ -658,7 +658,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
         }
 
         .plats {
-            margin-top: 50px;
+            margin-top: 20px;
             margin-left: 10px;
             margin-right: 10px;
             background: none;
@@ -979,7 +979,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 }
 
 .card_photo_resto {
-    margin-top: -600px;
+    margin-top: -350px;
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;

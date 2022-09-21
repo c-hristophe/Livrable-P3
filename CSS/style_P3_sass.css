@@ -627,7 +627,7 @@ footer .titre__footer {
 }
 
 .entrees {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   background: none;
@@ -642,7 +642,7 @@ footer .titre__footer {
 }
 
 .plats {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   background: none;
@@ -924,7 +924,7 @@ footer .titre__footer {
     margin-left: 45%;
   }
   .card_photo_resto {
-    margin-top: -600px;
+    margin-top: -350px;
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
