@@ -702,8 +702,6 @@ $entrees-delay: $entrees-dur + $entrees-ret;
             cursor: pointer;
             animation: select_plat 1000ms 500ms;
          
-            
-               
                 .trans {
                     display: inline-block;
                     text-align: right;
@@ -718,8 +716,6 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     transform: translateX(50px);
                 }       
 
-                
-                
                 &:hover .btn-icone {
                     transform: translateX(0px);
                     z-index: 1;
@@ -840,8 +836,6 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                    
                 }
                     
-            
-                
     .form_menu {
         background-color: $grey;
         height: 200px;
