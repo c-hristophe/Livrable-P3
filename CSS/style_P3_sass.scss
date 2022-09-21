@@ -848,50 +848,6 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     }
 
 
-@media screen and (min-width: 768px) {
-
-    html {
-        max-width: 1600px;
-        margin: auto;
-    }
-
-    .selection {
-        text-align: center;
-        display: inline-block;
-    }
-
-    .box {
-        margin: auto;
-        
-    }
-
-    .container {
-        flex-direction: row;
-    }
-    .card__photo {
-        flex: 1 100px;
-
-    }
-
-    footer {
-        margin: auto;
-        text-align: center;
-        p{
-            text-align: center;
-        }
-    }
-
-    .footer {
-        margin: auto;
-        flex-direction: row;
-    }
-
-    .titre__footer {
-        margin: auto;
-        text-align: center;
-}
-
-}
 
 @media screen and (min-width: 992px) {
 
@@ -903,6 +859,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 
     .container {
         flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     footer {
@@ -978,13 +935,14 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 @media screen and (min-width: 768px) {
 
     .card__photo {
-        flex: 1 280px;
-        flex-wrap: nowrap;
+        flex: 2 380px;
+        
 
     }
 
     .container {
         flex-direction: row;
+       
     }
 
     footer {
