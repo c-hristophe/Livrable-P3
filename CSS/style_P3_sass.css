@@ -864,7 +864,7 @@ footer .titre__footer {
     margin-left: 45%;
   }
   .card_photo_resto {
-    margin-top: -700px;
+    margin-top: -900px;
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
@@ -948,5 +948,15 @@ footer .titre__footer {
   .desk {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .card_photo_resto {
+    margin-top: -750px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .card_photo_resto {
+    margin-top: -850px;
   }
 }/*# sourceMappingURL=style_P3_sass.css.map */
