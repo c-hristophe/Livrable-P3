@@ -616,7 +616,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     border-top-right-radius: 30px;
     padding: 0px;
     margin-right: 0px;
-    margin-top: -50px;
+    margin-top: -20%;
     flex: 1 100%;
     z-index: 2;
     height: fit-content;
@@ -745,7 +745,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 
                 @keyframes reduit{
                     from {
-                        width:260px
+                        width:270px
                     }
 
                     to {
@@ -787,7 +787,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     white-space: nowrap;
                     color: black;
                     text-align: left;
-                    width: 260px;
+                    width: 270px;
                 }
 
                 h3
@@ -805,7 +805,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     text-align: left;
                     font-weight: lighter;
                     z-index: 1;
-                    width: 260px;
+                    width: 270px;
                     
                     
                 }
@@ -896,7 +896,6 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 }
 
 .card_photo_resto {
-    margin-top: -900px;
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
@@ -978,13 +977,6 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     margin-left: 45%;
 }
 
-.card_photo_resto {
-    margin-top: -350px;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 .titre_resto {
            
             flex: 1;
@@ -1014,20 +1006,3 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 }
 }
 
-@media screen and (min-width: 1300px) {
-
-    .card_photo_resto {
-        margin-top: -750px;
-        
-    }
-    
-}
-
-@media screen and (min-width: 1800px) {
-
-    .card_photo_resto {
-        margin-top: -850px;
-        
-    }
-    
-}
