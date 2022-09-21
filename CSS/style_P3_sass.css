@@ -205,13 +205,8 @@ header, article, footer, section {
 *définition du titre dans l'en tête
 */
 .titre {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: grey;
-  font-size: 20px;
+  display: inline;
+  margin-top: 30px;
 }
 
 .titre__home {
@@ -219,9 +214,14 @@ header, article, footer, section {
   text-align: center;
 }
 
+.centre {
+  padding-top: 30px;
+  text-align: center;
+  height: 60px;
+}
+
 .logo {
   width: 200px;
-  text-align: center;
 }
 
 .box__titre {
@@ -238,6 +238,10 @@ header, article, footer, section {
 .box__titre .fa-solid {
   margin: 0px;
   padding: 0px;
+}
+.box__titre .titre {
+  margin-top: 0px;
+  margin-left: 10px;
 }
 
 /**
@@ -496,7 +500,7 @@ header, article, footer, section {
 footer {
   font-family: "Roboto", sans-serif;
   background-color: rgb(48, 47, 47);
-  height: 250px;
+  height: 200px;
   padding: 0px;
 }
 footer ul li {
@@ -562,10 +566,12 @@ footer .titre__footer {
   }
 }
 .retour {
-  display: flex;
-  flex: 0 25%;
+  text-align: left;
   font-size: 30px;
   margin-left: 10px;
+  padding-top: 30px;
+  width: 30px;
+  float: left;
 }
 .retour .fa-solid {
   color: black;
@@ -690,6 +696,7 @@ footer .titre__footer {
 .card__menu .trans {
   display: inline-block;
   text-align: right;
+  float: right;
   transition-duration: 700ms;
   margin-right: 0px;
   margin-left: -20px;
@@ -888,5 +895,92 @@ footer .titre__footer {
   .spinner {
     margin-top: 20%;
     margin-left: 45%;
+  }
+  .card_photo_resto {
+    margin-top: -700px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .titre_resto {
+    flex: 1;
+    flex-direction: row;
+    width: 95%;
+  }
+  .card__menu {
+    width: 400px;
+  }
+  .entrees {
+    flex: 1 50px;
+    width: 400px;
+  }
+  .plats {
+    flex: 1 50px;
+    width: 400px;
+  }
+  .desk {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card__photo {
+    flex: 1 280px;
+    flex-wrap: nowrap;
+  }
+  .container {
+    flex-direction: row;
+  }
+  footer {
+    margin: auto;
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  .footer {
+    margin: auto;
+    flex-direction: row;
+  }
+  .titre__footer {
+    margin: auto;
+    text-align: center;
+  }
+  .selection {
+    text-align: center;
+    display: inline-block;
+  }
+  .box {
+    margin: auto;
+  }
+  .spinner {
+    margin-top: 20%;
+    margin-left: 45%;
+  }
+  .card_photo_resto {
+    margin-top: -600px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .titre_resto {
+    flex: 1;
+    flex-direction: row;
+    width: 95%;
+  }
+  .card__menu {
+    width: 400px;
+  }
+  .entrees {
+    flex: 1 50px;
+    width: 400px;
+  }
+  .plats {
+    flex: 1 50px;
+    width: 400px;
+  }
+  .desk {
+    display: flex;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style_P3_sass.css.map */
