@@ -293,6 +293,7 @@ header, article, footer, section {
 
 .gris {
   align-items: center;
+  text-align: center;
   background-color: rgb(241, 237, 237);
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -302,7 +303,13 @@ header, article, footer, section {
 }
 .gris h2 {
   text-align: center;
-  width: 100%;
+  width: 90%;
+  margin-left: 1%;
+}
+.gris h1 {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .selection {
@@ -589,7 +596,7 @@ footer .titre__footer {
 }
 
 .trait_dessous {
-  border-bottom: 5px solid aquamarine;
+  border-bottom: 5px solid #99E2D0;
   width: 50px;
   margin-left: 0px;
 }
@@ -708,7 +715,6 @@ footer .titre__footer {
 .card__menu .trans {
   display: inline-block;
   text-align: right;
-  float: right;
   flex: 0;
   transition-duration: 700ms;
   margin-right: -13%;
@@ -821,7 +827,7 @@ footer .titre__footer {
   padding-right: 15px;
   width: 90px;
   height: 100px;
-  background-color: aquamarine;
+  background-color: #99E2D0;
   font-size: 30px;
   color: white;
   transform: translate(150px);

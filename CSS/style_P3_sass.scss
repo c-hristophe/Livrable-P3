@@ -310,13 +310,21 @@ header,article, footer, section {
 .gris {
     
     align-items: center;
+    text-align: center;
     background-color: $grey;
     height: fit-content;
     padding-top: 20px;
     width: 100%;
         h2 {
             text-align: center;
-            width: 100%;
+            width: 90%;
+            margin-left: 1%;
+        }
+
+        h1 {
+            text-align: center;
+            width: 90%;
+            margin-left: 5%;
         }
 
     
@@ -616,7 +624,8 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     }
 }
 .trait_dessous {
-    border-bottom: 5px solid  aquamarine;
+    border-bottom: 5px solid  #99E2D0
+    ;
     width : 50px;
     margin-left: 0px;
 }
@@ -719,7 +728,6 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                 .trans {
                     display: inline-block;
                     text-align: right;
-                    float: right;
                     flex: 0;
                     transition-duration: 700ms;
                     margin-right: -13%;
@@ -840,7 +848,8 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     padding-right: 15px;
                     width: 90px;
                     height: 100px;
-                    background-color: aquamarine;
+                    background-color: #99E2D0
+                    ;
                     font-size: 30px;
                     color: white;
                     transform: translate(150px);
