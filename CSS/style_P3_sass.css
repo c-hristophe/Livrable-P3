@@ -287,6 +287,10 @@ header, article, footer, section {
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
+.form_menu .bouton {
+  width: 200px;
+}
+
 .gris {
   align-items: center;
   background-color: rgb(241, 237, 237);
@@ -317,7 +321,7 @@ header, article, footer, section {
   height: 60px;
   border: solid 1px white;
   width: 90%;
-  height: 90px;
+  height: 85px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   flex: 1 100px;

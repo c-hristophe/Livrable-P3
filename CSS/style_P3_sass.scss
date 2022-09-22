@@ -301,6 +301,12 @@ header,article, footer, section {
             }
 }
 
+.form_menu {
+    .bouton {
+        width:200px;
+    }
+}
+
 .gris {
     
     align-items: center;
@@ -331,7 +337,7 @@ header,article, footer, section {
         height: 60px;
         border: solid 1px white;
         width: 90%;
-        height: 90px;
+        height: 85px;
         text-align: center;
         @include shadow;
         flex: 1 100px;
