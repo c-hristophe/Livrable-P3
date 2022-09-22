@@ -316,7 +316,7 @@ header, article, footer, section {
   border-radius: 30px;
   height: 60px;
   border: solid 1px white;
-  width: 300px;
+  width: 90%;
   height: 90px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -707,7 +707,7 @@ footer .titre__footer {
   float: right;
   flex: 0;
   transition-duration: 700ms;
-  margin-right: -16%;
+  margin-right: -13%;
   margin-left: auto;
   z-index: 0;
   font-size: 20px;
@@ -815,7 +815,7 @@ footer .titre__footer {
   margin-top: 0px;
   padding-top: 14px;
   padding-right: 15px;
-  width: 90px;
+  width: 80px;
   height: 100px;
   background-color: aquamarine;
   font-size: 30px;
@@ -828,7 +828,7 @@ footer .titre__footer {
 }
 .btn-icone .selecteur {
   color: white;
-  margin-left: -4px;
+  margin-left: -8px;
 }
 
 .form_menu {
@@ -872,6 +872,7 @@ footer .titre__footer {
   }
   .box {
     margin: auto;
+    width: 360px;
   }
   .spinner {
     margin-top: 20%;
@@ -932,6 +933,7 @@ footer .titre__footer {
   }
   .box {
     margin: auto;
+    width: 370px;
   }
   .spinner {
     margin-top: 20%;

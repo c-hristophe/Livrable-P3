@@ -330,7 +330,7 @@ header,article, footer, section {
         border-radius: 30px;
         height: 60px;
         border: solid 1px white;
-        width: 300px;
+        width: 90%;
         height: 90px;
         text-align: center;
         @include shadow;
@@ -716,7 +716,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     float: right;
                     flex: 0;
                     transition-duration: 700ms;
-                    margin-right: -16%;
+                    margin-right: -13%;
                     margin-left: auto;
                     z-index: 0;
                     font-size: 20px;
@@ -832,7 +832,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     margin-top: 0px;
                     padding-top: 14px;
                     padding-right: 15px;
-                    width: 90px;
+                    width: 80px;
                     height: 100px;
                     background-color: aquamarine;
                     font-size: 30px;
@@ -845,7 +845,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     
                     .selecteur {
                         color: white;
-                        margin-left: -4px;
+                        margin-left: -8px;
                     }
                    
                 }
@@ -901,6 +901,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 
 .box {
     margin: auto;
+    width: 360px;
 }
 
 .spinner {
@@ -986,6 +987,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 
 .box {
     margin: auto;
+    width: 370px;
 }
 
 .spinner {
