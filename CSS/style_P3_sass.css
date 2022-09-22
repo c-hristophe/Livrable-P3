@@ -815,7 +815,7 @@ footer .titre__footer {
   margin-top: 0px;
   padding-top: 14px;
   padding-right: 15px;
-  width: 80px;
+  width: 90px;
   height: 100px;
   background-color: aquamarine;
   font-size: 30px;
@@ -829,6 +829,9 @@ footer .titre__footer {
 .btn-icone .selecteur {
   color: white;
   margin-left: -8px;
+}
+.btn-icone .selecteur .fa-solid {
+  font-size: 25px;
 }
 
 .form_menu {

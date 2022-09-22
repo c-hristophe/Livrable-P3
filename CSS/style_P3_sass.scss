@@ -832,7 +832,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     margin-top: 0px;
                     padding-top: 14px;
                     padding-right: 15px;
-                    width: 80px;
+                    width: 90px;
                     height: 100px;
                     background-color: aquamarine;
                     font-size: 30px;
@@ -846,6 +846,10 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     .selecteur {
                         color: white;
                         margin-left: -8px;
+                        
+                        .fa-solid {
+                            font-size: 25px;
+                        }
                     }
                    
                 }
