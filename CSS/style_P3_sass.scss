@@ -90,7 +90,7 @@ h1 {
 
 h2 {
     @include align-center;
-    padding-left: 8%;
+    padding-left: 30px;
     padding-top: 0%;
     margin-bottom: 50px;
     margin-bottom: 0px;
@@ -122,10 +122,11 @@ h4 {
     text-overflow: ellipsis;
 }
 
-p {
+h2 {
     font-size: 19px;
     font-weight:lighter;
-    margin-left: 0px;
+    text-align: left;
+    margin-left: -30px;
     margin-right: 20px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -242,6 +243,7 @@ header,article, footer, section {
 .logo {
         
     width: 200px;
+    margin-left: -20px;
     }
 
     .box__titre {
@@ -305,6 +307,11 @@ header,article, footer, section {
     background-color: $grey;
     height: fit-content;
     padding-top: 20px;
+    width: 100%;
+        h2 {
+            text-align: center;
+            width: 100%;
+        }
 
     
     
@@ -697,27 +704,30 @@ $entrees-delay: $entrees-dur + $entrees-ret;
             margin-right: 8px;
             margin-top: 20px;
             margin-bottom: 20px;
-            flex: 1 100px;
+            flex: 3 100px;
             height: 71px;
             cursor: pointer;
             animation: select_plat 1000ms 500ms;
+            z-index: 0;
          
                 .trans {
                     display: inline-block;
                     text-align: right;
                     float: right;
+                    flex: 0;
                     transition-duration: 700ms;
-                    margin-right: 0px;
-                    margin-left: -20px;
-                    z-index: 1;
+                    margin-right: -16%;
+                    margin-left: auto;
+                    z-index: 0;
                     font-size: 20px;
                     margin-top: 30px;
-                   
-                    transform: translateX(50px);
+                    
+                    
+                    
                 }       
 
                 &:hover .btn-icone {
-                    transform: translateX(0px);
+                    transform: translateX(30px);
                     z-index: 1;
                     margin: 0px;
                 }
@@ -732,23 +742,25 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                 }
 
                 &:hover .trans {
-                    transform: translateX(-10px);
-                }
-
-                &:hover h2 {
-                    animation: reduit 1s both;
+                    transform: translateX(-70px);
                 }
 
                 &:hover h3 {
+                    animation: reduit 1s both;
+                }
+
+                &:hover p {
                     animation: reduit 1s both;;
                 }
 
                 @keyframes reduit{
                     from {
+                        overflow: hidden ;
                         width:270px
                     }
 
                     to {
+                        overflow: hidden;
                         width:200px
                     }
                 }
@@ -770,16 +782,16 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                 width: 360px;
                 margin-top: 0;
                 margin-right: 0px;
-                z-index: 2;
+                z-index: 5;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 
 
-                h2 {
+                h3 {
                     display: block;
                     font-size: 18px;
                     font-weight: bolder;
-                    margin-left: -14px;
+                    margin-left: 12px;
                     margin-top: 3px;
                     margin-bottom: 3px;
                     text-overflow: ellipsis;
@@ -788,9 +800,10 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     color: black;
                     text-align: left;
                     width: 270px;
+                    z-index: 22;
                 }
 
-                h3
+                p
                 {
                     display: block;
                     font-size: 16px;
@@ -806,6 +819,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     font-weight: lighter;
                     z-index: 1;
                     width: 270px;
+                    z-index: 22;
                     
                     
                 }
@@ -818,7 +832,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
                     margin-top: 0px;
                     padding-top: 14px;
                     padding-right: 15px;
-                    width: 70px;
+                    width: 90px;
                     height: 100px;
                     background-color: aquamarine;
                     font-size: 30px;
@@ -899,6 +913,7 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: -40%;
 }
 
 .titre_resto {
@@ -915,7 +930,8 @@ $entrees-delay: $entrees-dur + $entrees-ret;
 
 .entrees {
     flex: 1 50px;
-    width: 400px;
+    width: 400px; 
+    
 }
 
 .plats {
@@ -923,9 +939,10 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     width: 400px;
 }
 
-.desk {
+.desk  {
     display: flex;
     flex-wrap: wrap;
+   
     
 }
 
@@ -1004,5 +1021,8 @@ $entrees-delay: $entrees-dur + $entrees-ret;
     flex-wrap: wrap;
     
 }
+
+
 }
+
 
