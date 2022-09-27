@@ -259,7 +259,7 @@ header,article, footer, section {
             }
 
             .titre {
-                margin-top: 0px;
+                margin-top: 12px;
                 margin-left: 10px;
             }
     }
@@ -414,7 +414,7 @@ header,article, footer, section {
         overflow: hidden;
         margin-right: 8px;
         margin-top: 30px;
-        flex: 0 100%;
+        flex: 1 100%;
         width: 100%;
     }
 
@@ -582,8 +582,9 @@ footer {
 
         .titre__footer {
             font-family: "Shrikhand", cursive;
-            font-size: 25px;
+            font-size: 20px;
             margin-left: 0px;
+            padding-top: 10px;
             color: white;
            
 
