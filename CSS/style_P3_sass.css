@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @-webkit-keyframes page {
   0% {
     opacity: 0;
@@ -40,12 +38,6 @@ article {
   width: 100%;
 }
 
-h1 {
-  font-size: 30px;
-  text-overflow: ellipsis;
-  text-align: center;
-}
-
 h2 {
   justify-content: center;
   align-items: center;
@@ -53,8 +45,6 @@ h2 {
   vertical-align: middle;
   padding-left: 30px;
   padding-top: 0%;
-  margin-bottom: 50px;
-  margin-bottom: 0px;
   font-size: 20px;
   color: grey;
   width: 65%;
@@ -62,34 +52,6 @@ h2 {
   text-overflow: ellipsis;
   overflow: hidden;
   display: block;
-}
-
-h3 {
-  font-size: 25px;
-  padding-top: 0px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: block;
-}
-
-h4 {
-  color: grey;
-  font-size: 28px;
-  margin: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-overflow: ellipsis;
-}
-
-h2 {
-  font-size: 19px;
-  font-weight: lighter;
-  text-align: left;
-  margin-left: -30px;
-  margin-right: 20px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  text-overflow: ellipsis;
 }
 
 a {
@@ -207,7 +169,6 @@ header, article, footer, section {
 */
 .titre {
   display: inline;
-  margin-top: 30px;
 }
 
 .titre__home {
@@ -242,7 +203,6 @@ header, article, footer, section {
   padding: 0px;
 }
 .box__titre .titre {
-  margin-top: 12px;
   margin-left: 10px;
 }
 
@@ -279,7 +239,6 @@ header, article, footer, section {
   margin: auto;
   width: 250px;
   font-size: 20px;
-  justify-content: center;
   transition: filter 500ms 150ms;
 }
 .bouton:hover {
@@ -325,7 +284,6 @@ header, article, footer, section {
   flex-direction: row;
   align-items: center;
   border-radius: 30px;
-  height: 60px;
   border: solid 1px white;
   width: 90%;
   height: 85px;
@@ -436,8 +394,6 @@ header, article, footer, section {
   flex-direction: column;
   flex: 1 100px;
   align-content: flex-start;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .card__comment h3 {
   color: rgb(99, 97, 97);
@@ -446,18 +402,12 @@ header, article, footer, section {
   margin: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .card__comment h2 {
-  font-size: 19px;
-  font-weight: bold;
   margin-left: 10px;
   margin-right: 20px;
   margin-top: 3px;
   margin-bottom: 3px;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 /**
@@ -516,7 +466,6 @@ header, article, footer, section {
 }
 
 footer {
-  font-family: "Roboto", sans-serif;
   background-color: rgb(48, 47, 47);
   height: 200px;
   padding: 0px;
@@ -651,13 +600,18 @@ footer .titre__footer {
   margin-right: 10px;
   background: none;
   border: none;
-  color: black;
   transform-origin: top;
   transform: scaleY(0);
   -webkit-animation: select_plat 2000ms 500ms;
           animation: select_plat 2000ms 500ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.entrees h2 {
+  text-align: left;
+  margin-left: -30px;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 .plats {
@@ -673,6 +627,12 @@ footer .titre__footer {
           animation: select_plat 2000ms 500ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.plats h2 {
+  text-align: left;
+  margin-left: -30px;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 .desserts {
@@ -751,7 +711,7 @@ footer .titre__footer {
 @-webkit-keyframes reduit {
   from {
     overflow: hidden;
-    width: 270px;
+    width: 370px;
   }
   to {
     overflow: hidden;
@@ -761,7 +721,7 @@ footer .titre__footer {
 @keyframes reduit {
   from {
     overflow: hidden;
-    width: 270px;
+    width: 370px;
   }
   to {
     overflow: hidden;
@@ -799,8 +759,6 @@ footer .titre__footer {
   white-space: nowrap;
   color: black;
   text-align: left;
-  width: 270px;
-  z-index: 22;
 }
 .card__comment--menu p {
   display: block;
@@ -816,7 +774,7 @@ footer .titre__footer {
   text-align: left;
   font-weight: lighter;
   z-index: 1;
-  width: 270px;
+  width: 350px;
   z-index: 22;
 }
 
@@ -897,11 +855,6 @@ footer .titre__footer {
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: -40%;
-  }
-  .titre_resto {
-    flex: 1;
-    flex-direction: row;
-    width: 95%;
   }
   .card__menu {
     width: 400px;
